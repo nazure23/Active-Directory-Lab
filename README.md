@@ -57,7 +57,7 @@ During the project, I intentionally created several problems so I could practice
 
 ### APIPA / Network Connectivity
 
-CLIENT01 initially received an APIPA (`169.254.x.x`) address because the isolated lab network did not have a DHCP server. I configured the workstation with the appropriate static IPv4 address and configured its DNS server to point to DC01.
+CLIENT01 was configured to communicate with DC01 using the lab's internal network. I verified connectivity to the domain controller and confirmed that corp.lab successfully resolved to 192.168.10.10 through DC01. The lookup also showed Server: Unknown, which provided an additional DNS troubleshooting point within the lab.
 
 I used commands such as:
 
